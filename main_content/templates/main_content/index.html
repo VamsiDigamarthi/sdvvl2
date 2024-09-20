@@ -1,0 +1,122 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block style_link %} 
+<link rel="stylesheet" href={% static 'main_content/index.css' %} /> {% endblock %}
+
+{% block main %}
+{% include "main_content/includes/header.html" %}
+
+<section class="hero-section">
+    <div class="hero-first-card">
+      <span class="hero-first-curv-line">
+        <span class="hero-first-curv-inner-line"></span>
+      </span>
+      <div class="hero-first-inner-card">
+        <img
+          src={% static "/main_content/images/image 1.png" %}
+          alt="hero-section-image"
+        />
+        <div class="hero-inner-card-text">
+          <span>Let's Talk</span>
+          <span>Businees</span>
+        </div>
+      </div>
+      <span class="hero-first-curv-line">
+        <span class="hero-second-curv-inner-line"></span>
+      </span>
+    </div>
+    <div class="hero-second-card">
+      <div class="hero-second-inner-card">
+        <span>We are one step solution to</span>
+        <h1>Trasform your</h1>
+        <h1><span>Vision</span> into <span>Reality</span></h1>
+        <!-- <span class="hero-second-inner-card-first-image"></span> -->
+        <span class="hero-second-inner-card-first-image">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/e314/e367/f7897fcf822536f97af85bfb35f5e5f5?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hW8T34N847SRe688zNYAjDZN-FTIoBPPPAzHnIemvwmbe5gYFu3-w1J-qRRHUqgZq1QbiSxm4z-lWolFSuYfNu5yMlhIrzU-gZc2s8nwMLaVjGq~x3bunJMp0Z-Fl1GXe217XWzHPR3-yq1BfvVBDLppM3plrVfQA~I9r4E6gllXJyNTF2tj6DgcPVJwGL4orrp9Y~KLOh2OMZ05~C9ei6pvwRxQVYG3Pi7fxhwdATHaeBcoVggvi5qHtazEvlKB2hMUFGXN4MRc4K59tiT8KpeQ7wwNaCkLLxsH-Hyj1h86vZzeiDbnygI0bvLnAArLqzSjQgSWMBKdY5tGpcvyZg__"
+            alt=""
+          />
+          <span>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              fill="#000000"
+              width="100%"
+              height="100%"
+              viewBox="0 0 256 256"
+              id="Flat"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M196,64V168a4,4,0,0,1-8,0V73.65625L66.82812,194.82812a3.99957,3.99957,0,0,1-5.65625-5.65625L182.34375,68H88a4,4,0,0,1,0-8H192A4.0002,4.0002,0,0,1,196,64Z"
+              />
+            </svg>
+          </span>
+        </span>
+        <span class="hero-second-inner-card-second-image">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/727d/e769/f63eb1c01bb99fc8df77968ccf82de88?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kd313-AWBzLfYp597bMB4GYsoLVELGWH7JNeK~QajweVMLLD8cvoSkFi-Locua6VKHnX6LWqwtPdrcuJTzlUmaXeY2ReEz3WAIxFkGRbstzKPEqu4j5W8fr6ubH0hBSgjCeN-nd~MQcq-Q6AdvnonckOYJAawzBeiaY9kOr1ehpyFLtecreSzdbJNs3EygqlO-s64q--5KjNSYnm~ds8jAULw8jFWi-xcDwlgASmVfN7I36CtcZocWQ1I8S1lz5unwQDkKsjx64J9gFFCOtff61gpuJqF7Ya-uYNiBlfuwUmYFpm-qoEBBmS6UML1BUpEvi8m-b3z6Tl8-CBsdDf1A__"
+            alt=""
+          />
+          <span>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              fill="#000000"
+              width="100%"
+              height="100%"
+              viewBox="0 0 256 256"
+              id="Flat"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M196,64V168a4,4,0,0,1-8,0V73.65625L66.82812,194.82812a3.99957,3.99957,0,0,1-5.65625-5.65625L182.34375,68H88a4,4,0,0,1,0-8H192A4.0002,4.0002,0,0,1,196,64Z"
+              />
+            </svg>
+          </span>
+        </span>
+        <div class="hero-second-card-image-container">
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/e314/e367/f7897fcf822536f97af85bfb35f5e5f5?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hW8T34N847SRe688zNYAjDZN-FTIoBPPPAzHnIemvwmbe5gYFu3-w1J-qRRHUqgZq1QbiSxm4z-lWolFSuYfNu5yMlhIrzU-gZc2s8nwMLaVjGq~x3bunJMp0Z-Fl1GXe217XWzHPR3-yq1BfvVBDLppM3plrVfQA~I9r4E6gllXJyNTF2tj6DgcPVJwGL4orrp9Y~KLOh2OMZ05~C9ei6pvwRxQVYG3Pi7fxhwdATHaeBcoVggvi5qHtazEvlKB2hMUFGXN4MRc4K59tiT8KpeQ7wwNaCkLLxsH-Hyj1h86vZzeiDbnygI0bvLnAArLqzSjQgSWMBKdY5tGpcvyZg__"
+              alt=""
+            />
+            <span></span>
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/727d/e769/f63eb1c01bb99fc8df77968ccf82de88?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kd313-AWBzLfYp597bMB4GYsoLVELGWH7JNeK~QajweVMLLD8cvoSkFi-Locua6VKHnX6LWqwtPdrcuJTzlUmaXeY2ReEz3WAIxFkGRbstzKPEqu4j5W8fr6ubH0hBSgjCeN-nd~MQcq-Q6AdvnonckOYJAawzBeiaY9kOr1ehpyFLtecreSzdbJNs3EygqlO-s64q--5KjNSYnm~ds8jAULw8jFWi-xcDwlgASmVfN7I36CtcZocWQ1I8S1lz5unwQDkKsjx64J9gFFCOtff61gpuJqF7Ya-uYNiBlfuwUmYFpm-qoEBBmS6UML1BUpEvi8m-b3z6Tl8-CBsdDf1A__"
+              alt=""
+            />
+            <span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="home-third-card">
+    <div class="home-third-inner-card">
+      <div class="home-third-first-inner-card"></div>
+      <div class="home-third-second-inner-card">
+        <img
+          src={% static "/main_content/images/image 4.png" %}
+          alt=""
+        />
+      </div>
+    </div>
+</section>
+
+
+
+  <section class="home-forth-image-card">
+      <img src={% static '/main_content/images/construction-first.jpeg' %} alt="fouth" />
+      <div>
+        <h1>From foundation to skyline, civil</h1>
+        <h1>construction turns blueprint into </h1>
+        <h1>reality</h1>
+      </div>
+  </section>
+
+
+{% include "main_content/includes/footer.html" %}
+
+  {% endblock %}

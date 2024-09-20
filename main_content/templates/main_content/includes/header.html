@@ -1,0 +1,28 @@
+<header>
+    <div>
+      <a href="/">
+        <img
+        src=""
+        alt="logo "
+      />
+      </a>
+    </div>
+    <nav  id="nav-links">
+      <ul>
+        {% comment %} <li><a href="/">Home</a></li> {% endcomment %}
+        <li><a href="#">Product</a></li>
+        <li><a href={% url "services" %}>Services</a></li>
+        <li><a href= {% url "about" %} >About Us</a></li>
+        <li><a href={% url "highlights" %}>Highlights</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div></div>
+    <span class="header-moving-span"></span>
+    <span class="header-icons-card" id="hamburger-icon">
+      <i class="fa-duotone fa-solid fa-bars"></i>
+    </span>
+    <span class="header-icons-card" id="cross-icon" style="display: none">
+      <i class="fa-solid fa-times"></i>
+    </span>
+  </header>
