@@ -1,0 +1,12 @@
+.blog-layout-right-main {
+  width: 85%;
+  height: 100%;
+  border: none !important;
+  overflow-y: scroll;
+  background-color: rgb(252, 247, 247);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

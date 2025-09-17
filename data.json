@@ -1,0 +1,41 @@
+[
+  {
+    "category": "Fruits",
+    "subcategories": [
+      {
+        "id": 1,
+        "name": "Apple",
+        "formFields": [
+          { "field_name": "quantity", "type": "number", "label": "Quantity" },
+          { "field_name": "some", "type": "number", "label": "some" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Banana",
+        "formFields": [
+          { "field_name": "ripeness", "type": "text", "label": "Ripeness" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Vegetables",
+    "subcategories": [
+      {
+        "id": 3,
+        "name": "Carrot",
+        "formFields": [
+          { "field_name": "length", "type": "number", "label": "Length (cm)" }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Broccoli",
+        "formFields": [
+          { "field_name": "size", "type": "text", "label": "Size" }
+        ]
+      }
+    ]
+  }
+]

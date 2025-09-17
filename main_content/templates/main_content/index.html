@@ -118,5 +118,9 @@
 
 
 {% include "main_content/includes/footer.html" %}
-
   {% endblock %}
+  {% block javascript %} 
+  <script src={% static 'main_content/scrolling.js' %}></script>
+  {% comment %} <script src="{% static '/main_content/header.js' %}"></script> {% endcomment %}
+   {% endblock %}
+ 

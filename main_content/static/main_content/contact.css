@@ -1,0 +1,502 @@
+.contact-hero-section {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  background-color: #001034;
+  overflow: hidden;
+  /* padding: 0px 60px; */
+  border-bottom: 1px solid grey;
+  /* margin-bottom: 20vh; */
+}
+
+.error-message {
+  color: red; /* Text color for error messages */
+  font-weight: bold; /* Make the error messages bold */
+  margin-top: 5px; /* Add space above the error message */
+  font-size: 0.9em; /* Adjust font size */
+  /* Optional styles */
+  background-color: #ffe6e6; /* Light red background */
+  padding: 5px; /* Add some padding */
+  border: 1px solid red; /* Border to highlight the error */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.contact-center-card {
+  width: 75%;
+  height: 100%;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+}
+
+.contact-center-card > img {
+  border-radius: 20px;
+  width: 90%;
+  height: 100%;
+}
+
+.contact-center-inner-card {
+  position: absolute;
+  width: calc(100% - 20%);
+  height: calc(100% - 80px);
+  /* border: 2px solid red; */
+  top: 40px;
+  left: calc(100% - 90%);
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  padding: 40px;
+  color: #fff;
+}
+
+.contact-center-inner-card > h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.contact-center-inner-card > p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  /* line-height: 35px; */
+  margin-top: 10px;
+}
+
+.contact-center-inner-card > button {
+  width: fit-content;
+  margin-top: 16px;
+  padding: 10px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: pink;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.contact-hero-first-card {
+  height: 20px;
+  width: 12.5%;
+  position: relative;
+}
+
+.contact-hero-curve-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 450px;
+  background-color: grey;
+  transform: rotate(30deg);
+  transform-origin: top right;
+}
+
+.contact-hero-curve-line-second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 450px;
+  background-color: grey;
+  transform: rotate(-30deg);
+  transform-origin: top left;
+}
+
+@media (max-width: 767px) {
+  .contact-center-card {
+    padding: 20px;
+  }
+}
+
+/* second */
+
+.contact-second-card {
+  width: 100%;
+  display: flex;
+  height: 650px;
+  /* border: 2px solid red; */
+}
+
+.contact-second-center-card {
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid grey; */
+  display: flex;
+  /* margin: 0px 60px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-second-first-card {
+  width: 12.5%;
+  height: 100%;
+  /* border-right: 1px solid grey; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-second-second-card {
+  width: 12.5%;
+  height: 100%;
+  /* border-left: 1px solid grey; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-second-first-card > div {
+  width: 100%;
+  height: 80%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.contact-second-second-card > div {
+  width: 100%;
+  height: 80%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.contact-econd-center-inner-card {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.contact-second-center-inner-first-card {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-second-center-inner-first-card > h1 {
+  color: #e0ff32;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.contact-second-center-inner-first-card > span {
+  font-size: 15px;
+  color: grey;
+}
+
+.contact-second-center-inner-first-card > p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.contact-second-center-inner-first-card-btn {
+  width: 180px;
+  background-color: #e0ff32;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+.contact-second-center-inner-first-card-btn > button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.contact-second-center-inner-first-card-btn > div {
+  width: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.contact-second-center-inner-second-card {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid grey;
+}
+
+.contact-second-center-inner-second-img-card {
+  width: 50%;
+  height: 80%;
+  position: relative;
+}
+
+.contact-second-center-inner-second-img-card > img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.contact-second-center-inner-second-img-card > div {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .contact-second-first-card {
+    height: 100%;
+  }
+  .contact-second-card {
+    height: fit-content;
+  }
+  .contact-second-center-card {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+  .contact-econd-center-inner-card {
+    flex-direction: column;
+    height: 100%;
+  }
+  .contact-second-center-inner-first-card {
+    width: 100%;
+    border: none;
+  }
+  .contact-second-center-inner-second-card {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact-second-center-inner-first-card > h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .contact-second-center-inner-first-card > span {
+    text-align: center;
+  }
+  .contact-second-center-inner-second-img-card {
+    width: 100%;
+  }
+}
+
+/* third card */
+
+.form-card {
+  width: 100%;
+  display: flex;
+  background-color: #001034;
+  /* height: 600px; */
+  border-bottom: 1px solid grey;
+}
+
+.form-first {
+  width: 12.5%;
+}
+
+.form-center-card {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.form-center-first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 30px 50px;
+  color: #fff;
+}
+.form-center-first > h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.form-center-first > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-center-first > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-center-first > form > div > input {
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 17px;
+}
+.form-center-first > form > div > textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.form-center-first > form > section {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-center-first > form > section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-center-first > form > section > div > div {
+  width: 50%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.form-center-first > form > section > div > div > input {
+  transform: scale(1.2);
+}
+
+.form-center-first > form > button {
+  width: 100%;
+  height: 40px;
+  background-color: #7f56d9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-center-second {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-left: 1px solid grey;
+  height: 100%;
+}
+.form-center-second-inner-card {
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.form-center-second-inner-first-card {
+  width: 100%;
+  display: flex;
+  height: 10%;
+}
+
+.form-center-second-inner-first-card > span {
+  width: 12.5%;
+  border-bottom: 1px solid grey;
+}
+
+.form-center-second-inner-first-card > div {
+  width: 75%;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-center-second-inner-first-card > div > h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.form-center-second-inner-second-card {
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+
+.form-center-second-inner-first {
+  width: 12.5%;
+  height: 100%;
+}
+.form-center-second-inner-center {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 30px;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.form-center-second-inner-center > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.form-center-second-inner-center > div > :nth-child(1) {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.form-center-second-inner-center > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form-center-second-inner-center > div > div > h3 {
+  font-size: 20px;
+}
+
+.form-center-second-inner-center > div > div > p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form-center-second-inner-third-card {
+  width: 100%;
+  display: flex;
+  height: 10%;
+}
+
+.form-center-second-inner-third-card > span {
+  width: 12.5%;
+  border-top: 1px solid grey;
+}
+
+.form-center-second-inner-third-card > div {
+  width: 75%;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

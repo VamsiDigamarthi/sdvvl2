@@ -1,20 +1,23 @@
+{% load static%}
+
 <header>
     <div>
       <a href="/">
         <img
-        src=""
-        alt="logo "
+        src="{% static "/main_content/images/SDVVL LOGO 3 (2).png" %}"
+        alt="logo"
+        class="header-image"
       />
       </a>
     </div>
     <nav  id="nav-links">
       <ul>
         {% comment %} <li><a href="/">Home</a></li> {% endcomment %}
-        <li><a href="#">Product</a></li>
+        <li><a href={% url "projects" %}>Projects</a></li>
         <li><a href={% url "services" %}>Services</a></li>
         <li><a href= {% url "about" %} >About Us</a></li>
         <li><a href={% url "highlights" %}>Highlights</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href={% url "contact" %}>Contact</a></li>
       </ul>
     </nav>
     <div></div>

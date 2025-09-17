@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}services{% endblock %} 
+{% block style_link %} 
+<link rel="stylesheet" href={% static 'main_content/blog.css' %} /> {% endblock %}
+{% block main %}
+<section class="dashboard-layout">
+  {% include "main_content/includes/search.html" %}
+  <section class="dash-layout-inner-card">
+  {% include "main_content/includes/sidebar.html" %}
+    <section class="blog-layout-right-main">
+      <form id="dynamic-form" method="post">
+        {% csrf_token %}
+        
+        <!-- First select tag for categories -->
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="">Select Category</option>
+            {% for category in categories %}
+                <option value="{{ category.category }}">{{ category.category }}</option>
+            {% endfor %}
+        </select>
+
+        <!-- Second select tag for subcategories (populated dynamically) -->
+        <label for="subcategory-select" style="display:none;">Subcategory:</label>
+        <select id="subcategory-select" name="subcategory" style="display:none;">
+            <option value="">Select Subcategory</option>
+        </select>
+
+        <!-- Form fields will be dynamically inserted here based on subcategory selection -->
+        <div id="form-container" style="display:none;"></div>
+        
+        <button type="submit" style="display:none;" id="submit-button">Submit</button>
+    </form>
+    </section>
+  </section>
+</section>
+{% endblock %}
+
+{% block javascript %} 
+<script src={% static 'main_content/blog.js' %}></script>
+
+<script src="{% static '/main_content/header.js' %}"></script>
+
+ {% endblock %}

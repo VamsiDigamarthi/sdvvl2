@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+ {% load static %}
+ {% block title %}contact us{% endblock %} 
+ {% block style_link %}
+  <link rel="stylesheet" href={% static 'main_content/contact.css' %} /> {% endblock %} 
+  {% block main %} {% include "main_content/includes/header.html" %}
+
+<section class="contact-hero-section">
+  <div class="contact-hero-first-card">
+    <span class="contact-hero-curve-line"></span>
+  </div>
+  <div class="contact-center-card">
+    <img src={% static "/main_content/images/services-hero-image.jpeg" %} alt=""
+    />
+    <div class="contact-center-inner-card">
+      <h1>Comprehensive Civil</h1>
+      <h1>Construction Services</h1>
+      <p>From site preparation to project</p>
+      <p>Completion, we handle every aspect of</p>
+      <p>Your construction needs</p>
+      <button>Learn More About Our Services</button>
+    </div>
+  </div>
+  <div class="contact-hero-first-card">
+    <span class="contact-hero-curve-line-second"></span>
+  </div>
+</section>
+
+<section class="contact-second-card">
+  <div class="contact-second-first-card">
+    <div></div>
+  </div>
+  <div class="contact-second-center-card">
+    <div class="contact-econd-center-inner-card">
+      <div class="contact-second-center-inner-second-card">
+        <div class="contact-second-center-inner-second-img-card">
+          <img src={% static '/main_content/images/about us 2.png' %} alt="" />
+          <div>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              fill="#000000"
+              width="100%"
+              height="100%"
+              viewBox="0 0 256 256"
+              id="Flat"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M196,64V168a4,4,0,0,1-8,0V73.65625L66.82812,194.82812a3.99957,3.99957,0,0,1-5.65625-5.65625L182.34375,68H88a4,4,0,0,1,0-8H192A4.0002,4.0002,0,0,1,196,64Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="contact-second-center-inner-first-card">
+        <h1>Our 15-Years Journey</h1>
+        <span>From humble begining to industry leaders</span>
+        <p>
+          Founded in 2008, our company began with a passion for transforming
+          landscapes and building lasting infrastructure. What started as a
+          small team focused on residential projects has frowth into a leading
+          civil construction firm, deluvering large-scale commercial and
+          infrastructure solutions across the region. Over the past 15 years,
+          we've completed over 500 projects, ranging from office buildings to
+          bridges, roads, and sustainable developments. Our commitment to
+          quality, innovation, and client satisfaction has earned us numerous
+          industry awards and long-standing partnerships with clients.
+        </p>
+        <div class="contact-second-center-inner-first-card-btn">
+          <button>Our Histor</button>
+          <div>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              fill="#000000"
+              width="100%"
+              height="100%"
+              viewBox="0 0 256 256"
+              id="Flat"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M196,64V168a4,4,0,0,1-8,0V73.65625L66.82812,194.82812a3.99957,3.99957,0,0,1-5.65625-5.65625L182.34375,68H88a4,4,0,0,1,0-8H192A4.0002,4.0002,0,0,1,196,64Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-second-second-card">
+    <div></div>
+  </div>
+</section>
+
+<section class="form-card">
+  <div class="form-first"></div>
+  <div class="form-center-card">
+    <div class="form-center-first">
+      <h1>Let's Level Up Your brand, together</h1>
+      <p>You can reach us anytime vis <a href="">ngsinfo@nuhvin.com</a></p>
+      <form action="{% url 'contact' %}" id="contactForm" method="POST" novalidate>
+        {% csrf_token %}
+        <div>
+          <label for="{{ form.name.id_for_label }}"
+            >{{ form.name.label }}</label
+          >
+          {{ form.name }} 
+          {% if form.name.errors %}
+            <div class="error-message">{{ form.name.errors }}</div>
+          {% endif %}
+        </div>
+        <div>
+          <label for="{{form.email.id_for_label}}">{{ form.email.label}}</label>
+          {{ form.email }}
+          {{ form.email.errors }}
+        </div>
+        <div>
+          <label for="{{form.phone.id_for_label}}">{{ form.phone.label}}</label>
+          {{ form.phone }}
+          {{ form.phone.errors }}
+        </div>
+        <div>
+          <label for="{{form.message.id_for_label}}">{{ form.message.label}}</label>
+          {{ form.message }}
+          {{ form.message.errors }}
+        </div>
+        <p>Services</p>
+        <section>
+            {% for checkbox in form.services %}
+              {% if forloop.counter0|divisibleby:2 %}
+                <div> <!-- New row for every two checkboxes -->
+              {% endif %}
+                  <div>
+                    {{ checkbox.tag }} <!-- Renders the actual checkbox -->
+                    <label for="{{ checkbox.id_for_label }}">{{ checkbox.choice_label }}</label>
+                  </div>
+              {% if forloop.counter0|divisibleby:2 == False or forloop.last %}
+                </div> <!-- Close row after two checkboxes -->
+              {% endif %}
+            {% endfor %}
+        </section>
+        <button>Get Started</button>
+      </form>
+    </div>
+    <div class="form-center-second">
+      <div class="form-center-second-inner-card">
+        <div class="form-center-second-inner-first-card">
+          <span></span>
+          <div>
+            <h2>Contact Us</h2>
+          </div>
+          <span></span>
+        </div>
+        <div class="form-center-second-inner-second-card">
+          <div class="form-center-second-inner-first"></div>
+          <div class="form-center-second-inner-center">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <h3>Office Hours</h3>
+                <p>Monday - Friday</p>
+                <p>8:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-house"></i>
+              <div>
+                <h3>Office Address</h3>
+                <p>Level 1, 12 sample st</p>
+                <p>syden NSW 2000</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Get In Touch</h3>
+                <p>+91 9000000000</p>
+                <p>+91 9000000000</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-center-second-inner-first"></div>
+        </div>
+        <div class="form-center-second-inner-third-card">
+          <span></span>
+          <div></div>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-first"></div>
+</section>
+
+{% include "main_content/includes/footer.html" %} {% endblock %}
+{% block javascript %} 
+<script src={% static 'main_content/contact.js' %}></script>
+
+<script src="{% static '/main_content/header.js' %}"></script>
+ 
+ {% endblock %}

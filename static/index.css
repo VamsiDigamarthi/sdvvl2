@@ -32,8 +32,23 @@ header > div {
   padding: 5px;
   height: 100%;
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* background-color: yellow; */
+}
+
+header > div > a {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.header-image {
+  width: 50px !important;
+  height: 50px !important;
+  /* background-color: red; */
 }
 
 .header-moving-span {
@@ -114,6 +129,8 @@ header > nav > ul > li > a {
   }
   header > div {
     width: 200px;
+    /* background-color: red; */
+    margin-left: -70px;
   }
   header > :nth-child(3) {
     display: none;
@@ -247,4 +264,144 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+/* search card */
+
+.d-search-card {
+  width: 100%;
+  height: 60px;
+  padding-left: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-search-icons-card {
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  gap: 1rem;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-search-icons-card > :nth-child(1) {
+  color: grey;
+}
+
+.d-search-icons-card > input {
+  width: 97%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.d-search-second-card {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding-right: 20px;
+}
+
+.d-search-second-card > :nth-child(1) {
+  position: relative;
+}
+
+.d-search-second-card > :nth-child(1) > :nth-child(1) {
+  font-size: 20px;
+  color: grey;
+}
+
+.d-search-second-card > :nth-child(1) > :nth-child(2) {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #001034;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-search-second-card > i {
+  font-size: 20px;
+  color: grey;
+}
+
+/* dash board */
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid grey; */
+}
+
+.dash-layout-inner-card {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+}
+
+.dash-layout-inner-card > aside {
+  width: 15%;
+  height: 100%;
+  background-color: #001034;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+.dash-layout-inner-card > aside > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dash-layout-inner-card > aside > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 10px;
+}
+.dash-layout-inner-card > aside > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dashboard-layout-right-main {
+  width: 85%;
+  height: 100%;
+  border: none !important;
+  overflow-y: scroll;
+  background-color: rgb(252, 247, 247);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard-layout-right-main > h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dashboard-layout-right-main > p {
+  font-size: 18px;
+  color: grey;
 }

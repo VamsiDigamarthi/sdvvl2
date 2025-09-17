@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}services{% endblock %} 
+{% block style_link %} 
+<link rel="stylesheet" href={% static 'main_content/dashboard.css' %} /> {% endblock %}
+{% block main %}
+<section class="dashboard-layout">
+  {% include "main_content/includes/search.html" %}
+  <section class="dash-layout-inner-card">
+  {% include "main_content/includes/sidebar.html" %}
+    <section class="dashboard-layout-right-main">
+      <form method="post" id="my-form">
+        {% csrf_token %}
+        {{ form.category }}
+        {% comment %} <select id="subcategory-select" name="subcategory">
+            <option value="">Select Subcategory</option>
+        </select>
+        
+        <div id="form-container" style="display:none;">
+            <!-- Add the form fields you want to show -->
+            <label for="field">Field:</label>
+            <input type="text" name="field" id="field">
+            <button type="submit">Submit</button>
+        </div> {% endcomment %}
+      </form>
+    
+    </section>
+  </section>
+</section>
+{% endblock %}
